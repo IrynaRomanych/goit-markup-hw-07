@@ -18,12 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="container site-navigation">
-        <a class="brand-logo link" href="/index.html">
+        <a class="brand-logo brand-logo__page-header link" href="/index.html">
           <span>Web</span><span class="brand-logo__item">Studio</span></a
         >
         <nav class="main-navigation">
@@ -78,8 +78,14 @@
     <main>
       <section class="section section-hero">
         <div class="container hero">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="main-button" type="button" data-modal-open>
+          <h1 class="main-title main-title__hero-title">
+            Ефективні рішення для вашого бізнесу
+          </h1>
+          <button
+            class="main-button main-button__hero"
+            type="button"
+            data-modal-open
+          >
             Замовити послугу
           </button>
         </div>
@@ -88,34 +94,34 @@
         <div class="container">
           <h2 class="section-title visually-hidden">переваги</h2>
           <ul class="benefits-list list">
-            <li class="benefits-item">
-              <div class="benefits-icon">
-                <svg class="benefits-img" width="70px" height="70px">
+            <li class="benefits-list__item">
+              <div class="benefits-list__icon">
+                <svg class="benefits-list__img" width="70px" height="70px">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
 
-              <h3 class="benefits-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="benefits-text">
+              <h3 class="benefits-list__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits-list__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="benefits-item">
-              <div class="benefits-icon">
-                <svg class="benefits-img" width="70" height="70">
+            <li class="benefits-list__item">
+              <div class="benefits-list__icon">
+                <svg class="benefits-list__img" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="benefits-text">
+              <h3 class="benefits-list__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits-list__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="benefits-item">
-              <div class="benefits-icon">
-                <svg class="benefits-img" width="70" height="70">
+            <li class="benefits-list__item">
+              <div class="benefits-list__icon">
+                <svg class="benefits-list__img" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
@@ -124,14 +130,14 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="benefits-item">
-              <div class="benefits-icon">
-                <svg class="benefits-img" width="70" height="70">
+            <li class="benefits-list__item">
+              <div class="benefits-list__icon">
+                <svg class="benefits-list__img" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="benefits-text">
+              <h3 class="benefits-list__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits-list__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -192,7 +198,7 @@
                 <h3 class="team-list__member">Ігор Дем'яненко</h3>
                 <p class="team-list__position">Product Designer</p>
               </div>
-              <div class="socials">
+              <div class="socials team__socials">
                 <ul class="socials__list list">
                   <li class="socials__item">
                     <a
@@ -537,8 +543,9 @@
     <footer class="footer">
       <div class="container footer-navigation">
         <div>
-          <a class="brand-logo brand-logo--footer link" href="/index.html">
-            <span>Web</span><span class="brand-logo__light">Studio</span></a
+          <a class="brand-logo brand-logo__footer link" href="/index.html">
+            <span>Web</span
+            ><span class="brand-logo__item--light">Studio</span></a
           >
           <address class="address">
             <ul class="address__footer list link">
@@ -560,18 +567,18 @@
             </ul>
           </address>
         </div>
-        <div class="socials socials--footer">
-          <h2 class="footer-social-title">приєднуйтесь</h2>
+        <div class="socials footer__socials">
+          <h2 class="social__title-footer">приєднуйтесь</h2>
 
           <ul class="socials__list list">
-            <li class="socials__item socials__item--footer">
+            <li class="socials__item socials__item--dark">
               <a
-                class="socials__link socials__link--footer link"
+                class="socials__link socials__link--dark link"
                 href="#"
                 aria-label="посилання на сторінку instagram"
               >
                 <svg
-                  class="socials__icon socials__icon--footer"
+                  class="socials__icon socials__icon--dark"
                   width="20px"
                   height="20px"
                 >
@@ -579,12 +586,12 @@
                 </svg>
               </a>
             </li>
-            <li class="socials__item socials__item--footer">
+            <li class="socials__item socials__item--dark">
               <a
-                class="socials__link socials__link--footer link"
+                class="socials__link socials__link--dark link"
                 href="#"
                 aria-label="посилання на сторінку twitter"
-                ><svg class="socials__icon socials__icon--footer">
+                ><svg class="socials__icon socials__icon--dark">
                   <use
                     href="./images/icons.svg#twitter"
                     width="20px"
@@ -593,13 +600,13 @@
                 </svg>
               </a>
             </li>
-            <li class="socials__item socials__item--footer">
+            <li class="socials__item socials__item--dark">
               <a
-                class="socials__link socials__link--footer link"
+                class="socials__link socials__link--dark link"
                 href="#"
                 aria-label="посилання на сторінку Facebook"
               >
-                <svg class="socials__icon socials__icon--footer">
+                <svg class="socials__icon socials__icon--dark">
                   <use
                     href="./images/icons.svg#facebook"
                     width="20px"
@@ -608,13 +615,13 @@
                 </svg>
               </a>
             </li>
-            <li class="socials__item socials__item--footer">
+            <li class="socials__item socials__item--dark">
               <a
-                class="socials__link socials__link--footer link"
+                class="socials__link socials__link--dark link"
                 href="#"
                 aria-label="посилання на сторінку Linkedin"
               >
-                <svg class="socials__icon socials__icon--footer">
+                <svg class="socials__icon socials__icon--dark">
                   <use
                     href="./images/icons.svg#linkedin"
                     width="20px"
@@ -626,7 +633,7 @@
           </ul>
         </div>
         <div class="subscribe">
-          <h2 class="footer-subscribe-title">Підпишіться на розсилку</h2>
+          <h2 class="subscribe__footer-title">Підпишіться на розсилку</h2>
           <form class="subscribe-form">
             <label>
               <input
@@ -636,10 +643,10 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="main-button main-button--subscribe" type="submit">
+            <button class="main-button main-button__subscribe" type="submit">
               Підписатися
               <svg
-                class="main-button--subscribe__icon"
+                class="main-button__icon"
                 width="24"
                 height="24"
                 aria-hidden="true"
@@ -714,7 +721,7 @@
               ></span
             >
           </label>
-          <button class="main-button main-button--form" type="submit">
+          <button class="main-button main-button__form" type="submit">
             Відправити
           </button>
         </form>

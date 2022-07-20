@@ -18,12 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="container site-navigation">
-        <a class="brand-logo link" href="/index.html">
+        <a class="brand-logo brand-logo__page-header link" href="/index.html">
           <span>Web</span><span class="brand-logo__item">Studio</span></a
         >
         <nav class="main-navigation">
@@ -76,30 +76,45 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="visually-hidden">коллекция наших работ</h1>
-          <ul class="buttons-group list">
+          <h1 class="main-title visually-hidden">коллекция наших работ</h1>
+          <ul class="buttons-group buttons-group__portfolio list">
             <li class="buttons-group__item">
-              <button class="buttons-group__button active" type="button">
+              <button
+                class="buttons-group__button button-secondary button-secondary--active"
+                type="button"
+              >
                 Все
               </button>
             </li>
             <li class="buttons-group__item">
-              <button class="buttons-group__button" type="button">
+              <button
+                class="buttons-group__button button-secondary"
+                type="button"
+              >
                 Веб-сайти
               </button>
             </li>
             <li class="buttons-group__item">
-              <button class="buttons-group__button" type="button">
+              <button
+                class="buttons-group__button button-secondary"
+                type="button"
+              >
                 Додатки
               </button>
             </li>
             <li class="buttons-group__item">
-              <button class="buttons-group__button" type="button">
+              <button
+                class="buttons-group__button button-secondary"
+                type="button"
+              >
                 Дизайн
               </button>
             </li>
             <li class="buttons-group__item">
-              <button class="buttons-group__button" type="button">
+              <button
+                class="buttons-group__button button-secondary"
+                type="button"
+              >
                 Маркетинг
               </button>
             </li>
@@ -123,9 +138,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-caption">
-                  <h2 class="card-caption__title">Технокряк</h2>
-                  <p class="card-caption__bunch">Веб-сайт</p>
+                <div class="portfolio__caption">
+                  <h2 class="portfolio__caption-title">Технокряк</h2>
+                  <p class="portfolio__caption-bunch">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -148,11 +163,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-caption">
-                  <h2 class="card-caption__title">
+                <div class="portfolio__caption">
+                  <h2 class="portfolio__caption-title">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="card-caption__bunch">Дизайн</p>
+                  <p class="portfolio__caption-bunch">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -175,9 +190,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-caption">
-                  <h2 class="card-caption__title">Ресторан Seafood</h2>
-                  <p class="card-caption__bunch">Додаток</p>
+                <div class="portfolio__caption">
+                  <h2 class="portfolio__caption-title">Ресторан Seafood</h2>
+                  <p class="portfolio__caption-bunch">Додаток</p>
                 </div>
               </a>
             </li>
@@ -200,9 +215,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-caption">
-                  <h2 class="card-caption__title">Проект Prime</h2>
-                  <p class="card-caption__bunch">Маркетинг</p>
+                <div class="portfolio__caption">
+                  <h2 class="portfolio__caption-title">Проект Prime</h2>
+                  <p class="portfolio__caption-bunch">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -225,9 +240,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-caption">
-                  <h2 class="card-caption__title">Проект Boxes</h2>
-                  <p class="card-caption__bunch">Додаток</p>
+                <div class="portfolio__caption">
+                  <h2 class="portfolio__caption-title">Проект Boxes</h2>
+                  <p class="portfolio__caption-bunch">Додаток</p>
                 </div>
               </a>
             </li>
@@ -250,11 +265,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-caption">
-                  <h2 class="card-caption__title">
+                <div class="portfolio__caption">
+                  <h2 class="portfolio__caption-title">
                     Inspiration has no Borders
                   </h2>
-                  <p class="card-caption__bunch">Веб-сайт</p>
+                  <p class="portfolio__caption-bunch">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -277,9 +292,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-caption">
-                  <h2 class="card-caption__title">Видання Limited Edition</h2>
-                  <p class="card-caption__bunch">Дизайн</p>
+                <div class="portfolio__caption">
+                  <h2 class="portfolio__caption-title">
+                    Видання Limited Edition
+                  </h2>
+                  <p class="portfolio__caption-bunch">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -302,9 +319,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-caption">
-                  <h2 class="card-caption__title">Проект LAB</h2>
-                  <p class="card-caption__bunch">Маркетинг</p>
+                <div class="portfolio__caption">
+                  <h2 class="portfolio__caption-title">Проект LAB</h2>
+                  <p class="portfolio__caption-bunch">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -327,9 +344,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-caption">
-                  <h2 class="card-caption__title">Growing Business</h2>
-                  <p class="card-caption__bunch">Додаток</p>
+                <div class="portfolio__caption">
+                  <h2 class="portfolio__caption-title">Growing Business</h2>
+                  <p class="portfolio__caption-bunch">Додаток</p>
                 </div>
               </a>
             </li>
@@ -337,11 +354,12 @@
         </div>
       </section>
     </main>
-    <footer class="footer section">
+    <footer class="footer">
       <div class="container footer-navigation">
         <div>
-          <a class="brand-logo brand-logo--footer link" href="/index.html">
-            <span>Web</span><span class="brand-logo__light">Studio</span></a
+          <a class="brand-logo brand-logo__footer link" href="/index.html">
+            <span>Web</span
+            ><span class="brand-logo__item--light">Studio</span></a
           >
           <address class="address">
             <ul class="address__footer list link">
@@ -363,18 +381,18 @@
             </ul>
           </address>
         </div>
-        <div class="socials socials--footer">
-          <h2 class="footer-social-title">приєднуйтесь</h2>
+        <div class="socials footer__socials">
+          <h2 class="social__title-footer">приєднуйтесь</h2>
 
           <ul class="socials__list list">
-            <li class="socials__item socials__item--footer">
+            <li class="socials__item socials__item--dark">
               <a
-                class="socials__link socials__link--footer link"
+                class="socials__link socials__link--dark link"
                 href="#"
                 aria-label="посилання на сторінку instagram"
               >
                 <svg
-                  class="socials__icon socials__icon--footer"
+                  class="socials__icon socials__icon--dark"
                   width="20px"
                   height="20px"
                 >
@@ -382,12 +400,12 @@
                 </svg>
               </a>
             </li>
-            <li class="socials__item socials__item--footer">
+            <li class="socials__item socials__item--dark">
               <a
-                class="socials__link socials__link--footer link"
+                class="socials__link socials__link--dark link"
                 href="#"
                 aria-label="посилання на сторінку twitter"
-                ><svg class="socials__icon socials__icon--footer">
+                ><svg class="socials__icon socials__icon--dark">
                   <use
                     href="./images/icons.svg#twitter"
                     width="20px"
@@ -396,13 +414,13 @@
                 </svg>
               </a>
             </li>
-            <li class="socials__item socials__item--footer">
+            <li class="socials__item socials__item--dark">
               <a
-                class="socials__link socials__link--footer link"
+                class="socials__link socials__link--dark link"
                 href="#"
                 aria-label="посилання на сторінку Facebook"
               >
-                <svg class="socials__icon socials__icon--footer">
+                <svg class="socials__icon socials__icon--dark">
                   <use
                     href="./images/icons.svg#facebook"
                     width="20px"
@@ -411,13 +429,13 @@
                 </svg>
               </a>
             </li>
-            <li class="socials__item socials__item--footer">
+            <li class="socials__item socials__item--dark">
               <a
-                class="socials__link socials__link--footer link"
+                class="socials__link socials__link--dark link"
                 href="#"
                 aria-label="посилання на сторінку Linkedin"
               >
-                <svg class="socials__icon socials__icon--footer">
+                <svg class="socials__icon socials__icon--dark">
                   <use
                     href="./images/icons.svg#linkedin"
                     width="20px"
@@ -429,7 +447,7 @@
           </ul>
         </div>
         <div class="subscribe">
-          <h2 class="footer-subscribe-title">Підпишіться на розсилку</h2>
+          <h2 class="subscribe__footer-title">Підпишіться на розсилку</h2>
           <form class="subscribe-form">
             <label>
               <input
@@ -439,10 +457,10 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="main-button main-button--subscribe" type="submit">
+            <button class="main-button main-button__subscribe" type="submit">
               Підписатися
               <svg
-                class="main-button--subscribe__icon"
+                class="main-button__icon"
                 width="24"
                 height="24"
                 aria-hidden="true"
