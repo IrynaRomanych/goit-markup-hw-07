@@ -18,46 +18,38 @@
   cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.main-button:hover,
-.main-button:focus {
-  background-color: var(--accent-color);
-}
-.main-button__hero {
-  width: 216px;
-  margin: 0 485px;
-}
 
-.main-button__subscribe {
-  display: inline-flex;
-  margin-left: 12px;
-  margin-right: 0;
-  padding: 10px 27px;
-  align-items: center;
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+  &__hero {
+    width: 216px;
+    margin: 0 485px;
+  }
 
-.main-button__icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  fill: var(--primery-bg-color);
-}
+  &__subscribe {
+    display: inline-flex;
+    margin-left: 12px;
+    margin-right: 0;
+    padding: 10px 27px;
+    align-items: center;
+  }
 
-.main-button__subscribe::after {
-  content: "";
-}
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: var(--primery-bg-color);
+  }
 
-.main-button__form {
-  margin: 0 124px;
-}
+  &__subscribe::after {
+    content: "";
+  }
 
-.buttons-group {
-  display: flex;
-  justify-content: center;
-}
-
-.buttons-group__portfolio {
-  margin-bottom: 50px;
+  &__form {
+    margin: 0 124px;
+  }
 }
 
 .button-secondary {
@@ -74,36 +66,45 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.button-secondary--active {
+    color: var(--primery-bg-color);
+    background-color: var(--accent-color);
+  }
 }
 
-.buttons-group__button-secondary {
-  font-family: inherit;
-}
+.buttons-group {
+  display: flex;
+  justify-content: center;
 
-.buttons-group__button:hover,
-.buttons-group__button:focus {
-  color: var(--primery-bg-color);
-  background-color: var(--accent-color);
-}
+  &__portfolio {
+    margin-bottom: 50px;
+  }
 
-.button-secondary.button-secondary--active {
-  color: var(--primery-bg-color);
-  background-color: var(--accent-color);
-}
+  &__button-secondary {
+    font-family: inherit;
+  }
 
-.buttons-group__item {
-  display: inline-block;
+  &__button:hover,
+  &__button:focus {
+    color: var(--primery-bg-color);
+    background-color: var(--accent-color);
+  }
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__item {
+    display: inline-block;
 
-.buttons-group__item:not(:last-child) {
-  margin-right: 8px;
-}
-.buttons-group__item:focus,
-.buttons-group__item:hover {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  &__item:focus,
+  &__item:hover {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .button-close {
@@ -119,13 +120,13 @@
   cursor: pointer;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button-close:hover {
-  fill: var(--accent-color);
-}
+  &:hover {
+    fill: var(--accent-color);
+  }
 
-.button-close__icon {
-  width: 11px;
-  height: 11px;
+  &__icon {
+    width: 11px;
+    height: 11px;
+  }
 }

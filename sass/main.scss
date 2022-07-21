@@ -1,26 +1,28 @@
-@import "./utiles/vars";
+@import "./utiles/variables";
 @import "./utiles/normalize";
 @import "./utiles/visually-hidden";
-@import "./utiles/base";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/images";
+@import "./base/section";
 
 @import "./components/backdrop";
 @import "./components/buttons";
-@import "./components/container";
 @import "./components/foprms";
-@import "./components/images";
 @import "./components/link";
 @import "./components/list";
 @import "./components/logo";
 @import "./components/modal";
 @import "./components/overlay";
-@import "./components/page-footer";
-@import "./components/page-header";
 @import "./components/portfolio-list";
-@import "./components/section-benefits";
-@import "./components/section-clients";
-@import "./components/section-hero";
-@import "./components/section-team";
-@import "./components/section-works";
-@import "./components/section";
 @import "./components/socials";
 @import "./components/titles";
+
+@import "./layout/page-footer";
+@import "./layout/page-header";
+@import "./layout/section-benefits";
+@import "./layout/section-clients";
+@import "./layout/section-hero";
+@import "./layout/section-team";
+@import "./layout/section-works";
