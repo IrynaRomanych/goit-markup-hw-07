@@ -11,8 +11,16 @@
 .address {
   font-style: normal;
 
+  &__footer {
+    @extend %list;
+  }
+
   &__item:not(:first-child) {
     margin-top: 9px;
+  }
+  &__link,
+  &__link--light {
+    @extend %link;
   }
 
   &__link {

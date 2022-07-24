@@ -1,4 +1,9 @@
+.benefits {
+  @extend %section;
+}
+
 .benefits-list {
+  @extend %list;
   display: flex;
   gap: 30px;
 

@@ -1,4 +1,8 @@
+.clients {
+  @extend %section;
+}
 .clients-list {
+  @extend %list;
   display: flex;
   gap: 30px;
 
@@ -8,6 +12,7 @@
   }
 
   &__link {
+    @extend %link;
     display: flex;
     height: 92px;
     border: 1px solid var(--icons-color);

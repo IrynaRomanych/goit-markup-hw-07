@@ -1,7 +1,10 @@
 .team {
+  @extend %section;
   background-color: var(--secondary-bg-color);
 }
+
 .team-list {
+  @extend %list;
   display: flex;
   gap: 30px;
 

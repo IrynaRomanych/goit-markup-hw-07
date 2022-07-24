@@ -35,6 +35,24 @@ li {
   padding: 0;
 }
 
+.clients-list__link, .contacts__link, .site-nav__link--current, .site-nav__link, .address__link, .address__link--light, .socials__link, .brand-logo,
+.brand-logo__page-header {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.work-list, .team-list, .clients-list, .benefits-list, .contacts, .site-nav, .address__footer, .socials__list, .portfolio, .buttons-group {
+  list-style: none;
+  text-decoration: none;
+}
+
+.works, .team, .section-hero, .clients, .benefits, .portfolio-section {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -65,13 +83,6 @@ body {
 img {
   display: block;
   max-width: 100%;
-}
-
-.section {
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .backdrop {
@@ -387,16 +398,6 @@ img {
 }
 .form__subscribe-email:focus, .form__subscribe-email:active {
   border: 1px solid var(--accent-color);
-}
-
-.link {
-  color: var(--primary-text-color);
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-  text-decoration: none;
 }
 
 .brand-logo {

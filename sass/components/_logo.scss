@@ -1,3 +1,8 @@
+.brand-logo,
+.brand-logo__page-header {
+  @extend %link;
+}
+
 .brand-logo {
   display: inline-block;
   font-family: Raleway, sans-serif;

@@ -1,7 +1,9 @@
 .works {
+  @extend %section;
   padding-top: 0;
 }
 .work-list {
+  @extend %list;
   display: flex;
   gap: 30px;
 
